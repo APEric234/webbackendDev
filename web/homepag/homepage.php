@@ -12,7 +12,7 @@
 
   </title>
   <body>
-    <?php echo date("D M d, Y G:i a");?>
+    
   <ul>
     <li>
       <a href="assignments.html">Assignments</a>
@@ -24,5 +24,6 @@
     <button class='btn-secondary dice ' >Click to test your answer</button>
       </div>
       <div><p>Short intro about me, am a long time board/tabletop game enthusiast and true enthusiast can answer the above question :) I am studying to improve my career prospects as a developer</p></div>
+      <?php echo date("D M d, Y G:i a");?>
     </body>
  </html>
