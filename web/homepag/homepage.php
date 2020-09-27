@@ -23,5 +23,6 @@
     <input type=text class="diceIn">How many sides does the best dice have? </input>
     <button class='btn-secondary dice ' >Click to test your answer</button>
       </div>
+      <div><p>Short intro about me, am a long time board/tabletop game enthusiast and true enthusiast can answer the above question :) I am studying to improve my career prospects as a developer</p></div>
     </body>
  </html>
