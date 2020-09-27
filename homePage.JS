@@ -4,6 +4,9 @@ $(function(){
    if (a == $(".diceIn").val()){
      $(".diceIn").val("Right Answer");
    }
+   else{
+    $(".diceIn").val("Wrong answer");
+   }
 
   
 });
