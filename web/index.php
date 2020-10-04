@@ -15,7 +15,7 @@
     
   <ul>
     <li>
-      <a href="assignments.html">Assignments</a>
+      <a href="allwork.html">Assignments</a>
     </li>
   </ul>
   <img src="images/turtle.jpg"> This ISN'T ME </img>
