@@ -14,11 +14,11 @@ require_once('./php/component.php');
   </title>
   <div class="items">
   <?php 
-  component();
-  component();
-  component();
-  component();
-  component();
+  component("turtle1","500");
+  component("turtle2","600");
+  component("turtle3","700");
+  component("turtle4","800");
+  component("turtle5","900");
   ?>
   
 </div>

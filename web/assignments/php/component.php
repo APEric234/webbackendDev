@@ -1,11 +1,11 @@
 <?php 
-function component(){
+function component($name,$price){
   $element='
   <div class="item sale1">
     <img src="images/turtle.jpg">
     <ul>
-      <li class="name">turtle</li>
-      <li class="price">500</li>
+      <li class="name">'+ $name +'</li>
+      <li class="price">'+$price+'</li>
     </ul>
   </div>
   ';
