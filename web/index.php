@@ -18,7 +18,7 @@
       <a href="assignments.html">Assignments</a>
     </li>
   </ul>
-  <img src="turtle.jpg"> This ISN'T ME </img>
+  <img src="images/turtle.jpg"> This ISN'T ME </img>
   <div class="btn-group container-lg btn-group-lg justify-content-center align-items-center" role="group" >
     <input type=text class="diceIn">How many sides does the best dice have? </input>
     <button class='btn-secondary dice ' >Click to test your answer</button>
