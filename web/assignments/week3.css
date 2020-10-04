@@ -1,0 +1,38 @@
+.a1 {
+  background-color: powderblue;
+  font-size: 20;
+}
+.a2 {
+  background-color: royalblue;
+  font-size: 30;
+}
+.a3 {
+  background-color: blueviolet;
+  font-size: 40;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.item{
+  border: 1px solid #dfdfdf;
+}
+img{
+  width:100%;
+  max-width:100px;
+}
+.items{
+  display:grid;
+  align-items: center;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  grid-column-gap: 50px;
+}
+
+
+MAIN{
+  MARGIN-LEFT:30%;
+  margin-right: 30%;
+
+}
