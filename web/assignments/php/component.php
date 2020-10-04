@@ -9,4 +9,5 @@ function component(){
     </ul>
   </div>
   ";
+  echo $element;
 }
