@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-
+<?php 
+require_once('./php/component.php');
+?>
 <html>
 <body>
   <head>
