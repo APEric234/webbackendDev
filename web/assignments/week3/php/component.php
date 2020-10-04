@@ -6,8 +6,12 @@ function component($name,$price){
     <ul>
       <li class="name">'.$name .'</li>
       <li class="price">'.$price.'</li>
+      <A href="#">Add to cart</a>
     </ul>
   </div>
   ';
   echo $element;
+}
+function setCookie(){
+
 }
