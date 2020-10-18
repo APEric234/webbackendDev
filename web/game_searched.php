@@ -30,12 +30,12 @@ $db = get_db();
 try{
 
 
-  $query = "select * from games ";
+  $query = "select * from games;";
   $count = 0;
   echo($query);
   $stmnt = $db->query($query);
   $stmnt -> execute();
-  $games = $stmnt->fetch();
+  $games = $stmnt->fetchAll();
   echo($games);
   foreach ($games as $gamey){
     echo("<li class='game'>The game is <b>"+$gamey['game_name']+"</b> It has the genre of"+ $gamey['genre'] +" and is in stock</li></br></br>");
