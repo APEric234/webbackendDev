@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 
 <html>
-  
+  <header>
+
+  </header>
 <?php
 require_once('db.php')
 ?>
@@ -30,6 +32,7 @@ try{
   
   $count = 0;
   echo($query);
+  echo("  ");
   $stmnt = $db->query($query);
   $stmnt -> execute();
   $games = $stmnt->fetch();
