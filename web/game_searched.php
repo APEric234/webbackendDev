@@ -25,6 +25,7 @@ $db = get_db();
 
 $game = $_POST["game"];
 $query = 'select * from games where name_game = '+ $game;
+echo "got here";
 $stmnt = $db->query($query);
 $stmnt -> execute();
 $games = $stmnt->fetchAll();
