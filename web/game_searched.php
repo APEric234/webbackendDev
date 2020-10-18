@@ -33,9 +33,10 @@ try{
   $stmnt = $db->query($query);
   $stmnt -> execute();
   $games = $stmnt->fetch();
-  echo($games);
+  if($games){
   echo("<li class='game'>The game <b>"+$games['game_name']+"</b> It has the genre of"+ $games['genre'] +" and is in stock</li></br></br>");
   $count = $count+1;
+}
   
 
 }catch(Exception $ex){
