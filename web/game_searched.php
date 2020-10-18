@@ -20,33 +20,34 @@ require_once('db.php')
 <P>Here we hope to fulfill all your gaming needs!</P>
 <p> Your search returned the following games</P>
 <ul>
+
+</ul>
+<P>feel free to browse our other amazing games</P>
+<ul>
   <?php
 $db = get_db();
 
 try{
-  #$game = $_POST["game"];
-  #echo($game);
+  $game2 = $_POST["game"];
+  echo($game);
 
-  #$query = "select * from games where name_game = '"+ $game+ "';" ;
-  $query = "select * from games where name_game = 'star trek: monopoly'";
-  $count = 0;
+  $query2 = "select * from games ";
+  $count2 = 0;
   echo($query);
   $stmnt = $db->query($query);
   $stmnt -> execute();
   $games = $stmnt->fetch();
   echo($games);
-  echo("<li class='game'>The game <b>"+$games['game_name']+"</b> It has the genre of"+ $games['genre'] +" and is in stock</li></br></br>");
-  $count = $count+1;
-  }
+  foreach ($games as $gamey){
+    echo("<li class='game'>The game is <b>"+$gamey['game_name']+"</b> It has the genre of"+ $gamey['genre'] +" and is in stock</li></br></br>");
+    $count = $count+1;
+    }
+
 
 }catch(Exception $ex){
   echo($ex);
 }
 ?>
-</ul>
-<P>feel free to browse our other amazing games</P>
-<ul>
-
 </ul>
 
 </body>
