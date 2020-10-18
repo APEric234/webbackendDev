@@ -24,8 +24,8 @@ require_once('db.php')
 $db = get_db();
 
 try{
-  $game = $_POST["game"];
-  echo($game);
+  #$game = $_POST["game"];
+  #echo($game);
 
   #$query = "select * from games where name_game = '"+ $game+ "';" ;
   $query = "select * from games where name_game = 'star trek: monopoly'";
