@@ -28,11 +28,10 @@ require_once('db.php')
 $db = get_db();
 
 try{
-  $game2 = $_POST["game"];
-  echo($game);
 
-  $query2 = "select * from games ";
-  $count2 = 0;
+
+  $query = "select * from games ";
+  $count = 0;
   echo($query);
   $stmnt = $db->query($query);
   $stmnt -> execute();
