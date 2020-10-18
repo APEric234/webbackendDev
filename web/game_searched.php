@@ -30,8 +30,8 @@ $count = 0;
 $stmnt = $db->query($query);
 $stmnt -> execute();
 $games = $stmnt->fetchAll();
-foreach ($games as $game){
-  echo("<li class='game'>The game <b>"+$game['game_name']+"</b> It has the genre of"+ $game['genre'] +" and is in stock</li></br></br>");
+foreach ($games as $gamey){
+  echo("<li class='game'>The game <b>"+$gamey['game_name']+"</b> It has the genre of"+ $gamey['genre'] +" and is in stock</li></br></br>");
   $count = $count+1;
   }
   if($count == 0){
