@@ -24,8 +24,9 @@ $db = get_db();
 
 
 $game = $_POST["game"];
+echo $game;
 $query = 'select * from games where name_game = '+ $game;
-echo "got here";
+$count = 0;
 $stmnt = $db->query($query);
 $stmnt -> execute();
 $games = $stmnt->fetchAll();
@@ -34,7 +35,11 @@ foreach ($games as $game){
     <b>"+$game['game_name']+
     "</b> It has the genre of"+ $game['genre'] +
     " and is in stock</li></br></br>");
-}
+  $count = $count+1;
+  }
+  if($count == 0){
+    echo("Sorry that game isn't in stock")
+  }
 ?>
 </ul>
 
