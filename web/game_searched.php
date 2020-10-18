@@ -22,7 +22,7 @@ require_once('db.php')
   <?php
 $db = get_db();
 
-
+try{
 $game = $_POST["game"];
 echo($game);
 $query = 'select * from games where name_game = '+ $game;
@@ -38,7 +38,11 @@ foreach ($games as $game){
   $count = $count+1;
   }
   if($count == 0){
-    echo("Sorry that game isn't in stock")
+    echo("Sorry that game isn't in stock");
+  }
+}
+}catch(Exception $ex){
+  echo($ex);
   }
 ?>
 </ul>
