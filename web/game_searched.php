@@ -37,7 +37,6 @@ foreach ($games as $game){
   if($count == 0){
     echo("Sorry that game isn't in stock");
   }
-}
 }catch(Exception $ex){
   echo($ex);
   }
