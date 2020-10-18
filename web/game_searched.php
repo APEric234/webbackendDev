@@ -46,30 +46,7 @@ try{
 </ul>
 <P>feel free to browse our other amazing games</P>
 <ul>
-  <?php
-$db = get_db();
 
-try{
-  $game = $_POST["game"];
-  echo($game);
-
-  $query = "select * from games ";
-  $count = 0;
-  echo($query);
-  $stmnt = $db->query($query);
-  $stmnt -> execute();
-  $games = $stmnt->fetch();
-  echo($games);
-  foreach ($games as $gamey){
-    echo("<li class='game'>The game is <b>"+$gamey['game_name']+"</b> It has the genre of"+ $gamey['genre'] +" and is in stock</li></br></br>");
-    $count = $count+1;
-    }
-
-
-}catch(Exception $ex){
-  echo($ex);
-}
-?>
 </ul>
 
 </body>
