@@ -29,10 +29,11 @@ echo "got here";
 $stmnt = $db->query($query);
 $stmnt -> execute();
 $games = $stmnt->fetchAll();
-foreach ($games as $game)
-
+foreach ($games as $game){
   echo("<li class='game'>The game 
-    <b>"+$game['game_name']+"</b> It has the genre of"+ $game['genre'] + " and is in stock</li></br></br>");
+    <b>"+$game['game_name']+
+    "</b> It has the genre of"+ $game['genre'] +
+    " and is in stock</li></br></br>");
 }
 ?>
 </ul>
