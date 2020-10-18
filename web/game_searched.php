@@ -24,7 +24,7 @@ $db = get_db();
 
 
 $game = $_POST["game"];
-echo $game;
+echo($game);
 $query = 'select * from games where name_game = '+ $game;
 $count = 0;
 $stmnt = $db->query($query);
