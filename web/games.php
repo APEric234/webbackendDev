@@ -13,7 +13,7 @@
   </title>
   <h1>Welcome to Games For US!</h1>
   <P>Here we hope to fulfill all your gaming needs!</P>
-  <form action="products.php" method="post">
+  <form action="game_searched.php" method="post">
     What game are you looking for: <input type="text" name="game" required><br>
     <p>Hit submit to check if we have it in stock</p>
     <input type="submit">
