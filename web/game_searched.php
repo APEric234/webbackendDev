@@ -27,16 +27,18 @@ try{
   echo($game);
   $query = "select * from games where name_game = '"+ $game+ "';" ;
   $count = 0;
-/*   $stmnt = $db->query($query);
+  echo($query);
+  $stmnt = $db->query($query);
   $stmnt -> execute();
   $games = $stmnt->fetchAll();
+  echo($games);
   foreach ($games as $gamey){
     echo("<li class='game'>The game <b>"+$gamey['game_name']+"</b> It has the genre of"+ $gamey['genre'] +" and is in stock</li></br></br>");
     $count = $count+1;
     }
     if($count == 0){
       echo("Sorry that game isn't in stock");
-    } */
+    } 
 }catch(Exception $ex){
   echo($ex);
 }
