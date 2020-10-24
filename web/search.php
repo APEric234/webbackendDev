@@ -6,7 +6,7 @@ try{
   $game = $_POST["game"];
   echo($game);
   $sql = 'SELECT * from games;';
-  $result =$conn->query($sql);
+  $result =$db->query($sql);
   if($result->num_rows>=1){
   foreach ($result as $row) {
       print "got here";
