@@ -9,6 +9,8 @@ body *{
 border-width: 5px;
 border-color: blueviolet;
 color:purple;
+width:80%;
+margin:auto;
 }
 .a1 {
   background-color: powderblue;
