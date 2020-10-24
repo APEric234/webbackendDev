@@ -21,8 +21,9 @@
 <div>
   <P>Here we hope to fulfill all your gaming needs!</P>
 
-  
+
   <?php 
+  require_once("db.php");
   require_once("generate_deletables.php");
   ?>
     </body>
