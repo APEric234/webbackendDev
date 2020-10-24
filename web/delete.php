@@ -47,6 +47,9 @@ require_once('db.php')
     }
 
       $query2 = "delete from games where game_id =$id";
+      $stmnt = $db->query($query2);
+      $stmnt -> execute();
+   
       echo "
         <html><body>
         <b> The game in question has been removed!<b>
