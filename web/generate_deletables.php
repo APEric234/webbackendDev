@@ -10,7 +10,7 @@ try{
   $result = $result ->fetchAll(PDO::FETCH_ASSOC);
 
   foreach ($result as $row) {
-      echo "<form submit='delete.php' method='post'>";
+      echo "<form action='delete.php' method='post'>";
       echo "<input id='gameId' name='gameId' type='hidden' value=", $row["game_id"], ">";
       echo "<input type='submit' value='Delete ", $row["name_game"],"'>";
       echo "</form>";
