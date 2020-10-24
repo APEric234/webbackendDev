@@ -30,7 +30,10 @@
   <P>Here we hope to fulfill all your gaming needs!</P>
   <p> Your search returned the following games
     <ul class="search_results">
-    <?php require_once('search.php'); ?>
+    <?php
+    require_once('db.php');
+    require_once('search.php'); 
+    ?>
 
 
     </ul>
