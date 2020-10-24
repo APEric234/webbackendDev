@@ -31,8 +31,8 @@
     
     <label for="name">Name of your game:</label>
     <input type="text" name="name" id="name" value="" required>
-    <label for="name">Genre it falls under:</label>
-    <input type="text" name="name" id="name" value="" required>
+    <label for="genre">Genre it falls under:</label>
+    <input type="text" name="genre" id="genre" value="" required>
     <p>Hit submit to add it to the catalogue</p>
     <input type="submit">
     <input type="reset">
