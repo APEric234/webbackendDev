@@ -16,7 +16,7 @@
 <div class="topnav">
   <a href="games.php">Home</a>
   <a class="active" href="addition.php">Game Addition</a>
-  <a class="active" href="deletion.php">Game Deletion</a>
+  <a href="deletion.php">Game Deletion</a>
 </div>
 <div>
   <P>Here we hope to fulfill all your gaming needs!</P>
