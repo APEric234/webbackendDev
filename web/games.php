@@ -13,11 +13,11 @@
 
 </title>
 <h1>Welcome to Games For US!</h1>
-<div class="topnav">
+  <div class="topnav">
   <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
+  <a href="genre.php">Genres</a>
+  <a href="wholecatalog.php">Contact</a>
+  <a href="about.html">About</a>
 </div>
 <P>Here we hope to fulfill all your gaming needs!</P>
 <form action="game_searched.php" method="post">
