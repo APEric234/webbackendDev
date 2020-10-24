@@ -7,9 +7,7 @@ try{
   echo($game);
   $sql = 'SELECT * from games;';
   foreach ($conn->query($sql) as $row) {
-      print $row['game_name'] . "\t";
-      print $row['genre'] . "\t";
-      print $row['type_game'] . "\n";
+      print "got here";
   }
   
 
