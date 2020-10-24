@@ -10,7 +10,9 @@ border-width: 5px;
 border-color: blueviolet;
 color:purple;
 width:80%;
-margin:auto;
+margin-left: 100px;
+
+margin-right: 100px;
 }
 .a1 {
   background-color: powderblue;
