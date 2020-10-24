@@ -7,9 +7,8 @@ try{
   $sql = 'SELECT * from games;';
   $result =$db->query($sql);
   $result -> execute();
-  $result = $result ->fetch(PDO::FETCH_ASSOC);
+  $result = $result ->fetchAll(PDO::FETCH_ASSOC);
 
-  if($result->num_rows>=1){
   foreach ($result as $row) {
     print $row['name_game'];
     if ($row["name_game"] == $game){
@@ -19,7 +18,7 @@ try{
   
     }
   }
-}
+
 
 }catch(Exception $ex){
 
