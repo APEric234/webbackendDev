@@ -27,7 +27,7 @@ require_once('db.php')
       $name=$_POST['name'];
       
       $type=$_POST['type'];
-      $type_game=$_POST['type'];
+      $type_game=$_POST['game_type'];
       $genre=$_POST['genre'];
 
       $query2 = "insert  into games (game_id,genre,type_game,name_game) Values($id,'$genre','$type_game','$name');";
