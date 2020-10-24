@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="game_searched.css">
+<link rel="stylesheet" href="homepagestly.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="homePage.JS"></script>
@@ -14,12 +14,27 @@
 </title>
 <h1>Welcome to Games For US!</h1>
   <div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="addition.php">add a game</a>
-  <a href="deleting.php">remove a game</a>
-  <a href="about.html">About</a>
+  <a href="games.php">Home</a>
+  <a class="active" href="addition.php">Game Addition</a>
+  <a class="active" href="deletion.php">Game Deletion</a>
 </div>
+<div>
 <P>Here we hope to fulfill all your gaming needs!</P>
+<P>Here are all the current genre's we use to categorize our games<P>
+  <ul>
+    <li></li>
+  </ul>
+</div>
+
+    <li></li>
+  </ul>
+<ul class="search_results">
+    <?php
+    require_once('db.php');
+    require_once('genre.php'); 
+    ?>
+
+
 <form action="game_searched.php" method="post">
   What game are you looking for: <input type="text" name="game" required><br>
   <p>Hit submit to check if we have it in stock</p>
