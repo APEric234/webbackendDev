@@ -11,6 +11,7 @@ try{
 
   
   foreach ($db->query($query_string) as $row) {
+    echo $row['game_name']; 
     if($row['game_name'] == $game){
       echo "<li class='game'>The game <b>",$row['game_name'],"</b> It has the genre of", $row['genre'] ," and is in stock</li></br></br>";
     }
