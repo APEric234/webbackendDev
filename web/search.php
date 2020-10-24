@@ -7,7 +7,7 @@ try{
   echo($game);
 
   #$query = "select * from games where name_game = '"+ $game+ "';" ;
-  $stmt = $db->prepare("SELECT * FROM games WHERE name_game = '?'");
+  $stmt = $db->prepare("SELECT * FROM games WHERE name_game = '?';");
   $stmnt -> execute([$game]);
   $games = $stmnt->fetch();
   if($games){
