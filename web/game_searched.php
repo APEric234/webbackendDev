@@ -30,6 +30,7 @@
   <P>Here we hope to fulfill all your gaming needs!</P>
   <p> Your search returned the following games
     <ul class="search_results">
+    <?php require_once('search.php'); ?>
 
 
     </ul>
@@ -38,5 +39,5 @@
 
 </body>
 <footer><?php echo date("D M d, Y G:i a");?></footer>
-<?php require_once('search.php'); ?>
+
 </html>

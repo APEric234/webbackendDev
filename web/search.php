@@ -11,15 +11,8 @@ try{
   $stmnt -> execute([$game]);
   $games = $stmnt->fetch();
   if($games){
-    $doc = new DOMDocument();
-    $ul = $doc->getElementsByTagName('ul')->item(0);
-    $first = $ul->childNodes->item(0);
+  echo("<li class='game'>The game <b>"+$games['game_name']+"</b> It has the genre of"+ $games['genre'] +" and is in stock</li></br></br>");
 
-    $li = $doc->createElement('li');
-    $li ->setAttribute('class', 'game');
-    $li ->innerHtml = "The game <b>"+ $games['game_name'] + "</b> It has the genre of"+ $games['genre'] + " and is in stock";
-    $ul->insertBefore($node,$li);
-    echo $dom->saveHTML();
 }
   
 
