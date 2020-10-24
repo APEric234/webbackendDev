@@ -13,7 +13,7 @@ try{
   if($result->num_rows>=1){
   foreach ($result as $row) {
       print "got here";
-      print $row["name_game"]
+      print $row["name_game"];
   }
 }
 
