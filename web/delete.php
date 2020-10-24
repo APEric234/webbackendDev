@@ -10,7 +10,7 @@ require_once('db.php')
     $stmnt = $db->query($query);
     $stmnt -> execute();
     $id_duplicate = $stmnt->fetchAll(); 
-    while(!empty($id_duplicate)){
+    if(!empty($id_duplicate)){
       //note to self this will infinite loop once all 1000 are made need to fix later
       $id=rand();
       
@@ -24,7 +24,7 @@ require_once('db.php')
     $stmnt = $db->query($query);
     $stmnt -> execute();
     $id_duplicate = $stmnt->fetchAll(); 
-    while(!empty($id_duplicate)){
+    if(!empty($id_duplicate)){
       //note to self this will infinite loop once all 1000 are made need to fix later
       $id=rand();
       $query = "delete from cards where game_id = $id;";
@@ -35,7 +35,7 @@ require_once('db.php')
     $stmnt = $db->query($query);
     $stmnt -> execute();
     $id_duplicate = $stmnt->fetchAll(); 
-    while(!empty($id_duplicate)){
+    if(!empty($id_duplicate)){
       //note to self this will infinite loop once all 1000 are made need to fix later
       $id=rand();
       
