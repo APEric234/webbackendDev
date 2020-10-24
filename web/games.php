@@ -21,8 +21,7 @@
 </div>
 <P>Here we hope to fulfill all your gaming needs!</P>
 <form action="game_searched.php" method="post">
-  What game are you looking for(to get all games set it to all): <input type="text" name="game" value="All" required><br>
-  <label> <input></label>
+  What game are you looking for (to get all games set it to all): <input type="text" name="game" value="All" required><br>
   <p>Hit submit to check if we have it in stock</p>
   <input type="submit">
 

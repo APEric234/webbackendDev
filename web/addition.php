@@ -33,7 +33,7 @@
     <input type="text" name="name" id="name" value="" required>
     <label for="genre">Genre it falls under:</label>
     <input type="text" name="genre" id="genre" value="" required>
-    <label for="game_type">Genre it falls under:</label>
+    <label for="game_type">type it falls under:</label>
     <input type="text" name="game_type" id="game_type" value="" required>
     <p>Hit submit to add it to the catalogue</p>
     <input type="submit">
