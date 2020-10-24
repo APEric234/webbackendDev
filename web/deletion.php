@@ -20,7 +20,7 @@
 </div>
 <div>
 <P>Here we hope to fulfill all your gaming needs!</P>
-<P>Here are all the current genre's we use to categorize our games<P>
+<P>Here are all of our current games's we use to categorize our games<P>
   <ul>
     <li></li>
   </ul>
@@ -31,7 +31,7 @@
 <ul class="search_results">
     <?php
     require_once('db.php');
-    require_once('genre.php'); 
+    require_once('allgames.php'); 
     ?>
 
 
