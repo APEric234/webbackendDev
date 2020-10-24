@@ -7,19 +7,20 @@ try{
   echo($game);
 
   $query_string = "select * from games;" ;
+  echo($query_string);
 
   
   foreach ($db->query($query_string) as $row) {
     if($row['game_name'] == $game){
-      echo("<li class='game'>The game <b>"+$row['game_name']+"</b> It has the genre of"+ $row['genre'] +" and is in stock</li></br></br>");
+      echo "<li class='game'>The game <b>",$row['game_name'],"</b> It has the genre of", $row['genre'] ," and is in stock</li></br></br>";
     }
 
 }
   
 
 }catch(Exception $ex){
-  echo("there was an error");
-  echo($ex);
+
+  echo 'Caught exception: ',  $ex->getMessage(), "\n" ;
 }
 ?>
  
