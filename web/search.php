@@ -11,6 +11,7 @@ try{
 
   if($result->num_rows>=1){
   foreach ($result as $row) {
+    print $row['name_game'];
     if ($row["name_game"] == $game){
       echo "<li class=game> We have a copy of <b>" ,$row["name_game"],"</b> we have it categorized as a ",
       $row["Type_game"]," type game of the ",$row["genre"]," genre </li>";
