@@ -10,6 +10,7 @@ try{
   $stmt = $db->prepare('SELECT * FROM games WHERE name_game = ?');
   $stmnt -> execute([$game]);
   $games = $stmnt->fetch();
+  echo($games);
   if($games){
   echo("<li class='game'>The game <b>"+$games['game_name']+"</b> It has the genre of"+ $games['genre'] +" and is in stock</li></br></br>");
 
@@ -17,6 +18,7 @@ try{
   
 
 }catch(Exception $ex){
+  echo("there was an error");
   echo($ex);
 }
 ?>
