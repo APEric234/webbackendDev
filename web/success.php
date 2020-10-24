@@ -31,11 +31,11 @@ require_once('db.php')
 
       $query2 = "insert  into games (game_id,genre,type_gamee) Values($id,'$name','$genre');";
       if ($type== "TableTop"){
-        $query3 = "insert  into tabke_top (game_id) Values($id);";
+        $query3 = "insert  into table_top (game_id) Values($id);";
       }elseif($type== "Cards"){
         $query3 = "insert  into cards (game_id,num_cards) Values($id,52);";
       }else{
-        $query3 = "insert  into cards (game_id,version) Values($id,'1.0');";
+        $query3 = "insert  into pen_paper  (game_id,version) Values($id,'1.0');";
       }
       $stmnt = $db->prepare($query2);
       $stmnt->execute();

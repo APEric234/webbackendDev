@@ -25,14 +25,15 @@
   <form action="success.php" method="post">
     What Type of game are you adding?
 
-    <label<input type="radio" id="tt" name="type" value="TableTop" required> Board Game</label><br>
+    <label><input type="radio" id="tt" name="type" value="TableTop" required> Board Game</label><br>
     <label><input type="radio" id="c" name="type" value="Cards"> Card Game</label><br>
     <label><input type="radio" id="p" name="type" value="Pen">Pen & Paper</label><br>
-    <p>Hit submit to add it to the catalogue</p>
+    
     <label for="name">Name of your game:</label>
     <input type="text" name="name" id="name" value="" required>
     <label for="name">Genre it falls under:</label>
     <input type="text" name="name" id="name" value="" required>
+    <p>Hit submit to add it to the catalogue</p>
     <input type="submit">
     <input type="reset">
 
