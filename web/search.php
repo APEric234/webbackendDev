@@ -12,7 +12,6 @@ try{
   $games = $stmnt->fetch();
   if($games){
     $doc = new DOMDocument();
-    $doc->loadHTML($children);
     $ul = $doc->getElementsByTagName('ul')->item(0);
     $first = $ul->childNodes->item(0);
 
