@@ -29,7 +29,7 @@ require_once('db.php')
       $type=$_POST['type'];
       $genre=$_POST['genre'];
 
-      $query2 = "insert  into games (game_id,genre,type_gamee) Values($id,'$name','$genre');";
+      $query2 = "insert  into games (game_id,genre,type_game) Values($id,'$name','$genre');";
       if ($type== "TableTop"){
         $query3 = "insert  into table_top (game_id) Values($id);";
       }elseif($type== "Cards"){
