@@ -8,10 +8,12 @@ try{
   $sql = 'SELECT * from games;';
   $result =$db->query($sql);
   $result -> execute();
+  $result = $result ->fetch(PDO::FETCH_ASSOC);
+  print_r($result);
   if($result->num_rows>=1){
   foreach ($result as $row) {
       print "got here";
-      print $row["game_name"]
+      print $row["name_game"]
   }
 }
 
