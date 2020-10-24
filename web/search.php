@@ -18,7 +18,7 @@ try{
 
 }catch(Exception $ex){
   echo("there was an error");
-  echo($ex);
+  #echo($ex);
 }
 ?>
  
