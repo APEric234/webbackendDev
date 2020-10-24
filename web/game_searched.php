@@ -23,7 +23,7 @@
   <P>Here we hope to fulfill all your gaming needs!</P>
   <p> Your search returned the following games</P>
   <ul>
-  <?php require_once('db.php'); ?>
+  <?php require_once('search.php'); ?>
 
   </ul>
 
