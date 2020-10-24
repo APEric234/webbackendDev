@@ -7,6 +7,7 @@ try{
   echo($game);
   $sql = 'SELECT * from games;';
   $result =$db->query($sql);
+  echo $result;
   if($result->num_rows>=1){
   foreach ($result as $row) {
       print "got here";
