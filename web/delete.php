@@ -1,6 +1,3 @@
-<?php
-require_once('db.php')
-?>
 
 <?php
     $db=get_db();
