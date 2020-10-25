@@ -1,5 +1,6 @@
-
 <?php
+require_once('db.php');
+
     $db=get_db();
     $id=$_POST['gameId'];
     
