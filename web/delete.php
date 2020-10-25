@@ -3,7 +3,7 @@ require_once('db.php');
 
     $db=get_db();
     $id=$_POST['gameId'];
-    
+    echo $id;    
     $query = "select game_id from table_top where game_id = $id;";
     $stmnt = $db->query($query);
     $stmnt -> execute();
