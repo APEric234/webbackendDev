@@ -18,7 +18,7 @@ require_once('db.php');
       $stmnt = $db->query($query);
       $stmnt -> execute();
       $count = $stmnt->rowCount();
-      echo $count, " ";
+      echo $count, " delete from table ";
     }
     $query = "select game_id from cards where game_id = $id;";
     $stmnt = $db->query($query);
@@ -31,7 +31,7 @@ require_once('db.php');
       $stmnt = $db->query($query);
       $stmnt -> execute();
       $count = $stmnt->rowCount();
-      echo $count, " ";
+      echo $count, " deleted from cards";
     }
     $query = "select game_id from pen_paper where game_id = $id;";
     $stmnt = $db->query($query);
@@ -47,14 +47,14 @@ require_once('db.php');
       $stmnt = $db->query($query);
       $stmnt -> execute();
       $count = $stmnt->rowCount();
-      echo $count, " ";
+      echo $count, " deleted from pen";
     }
 
       $query2 = "delete from games where game_id = $id;";
       $stmnt = $db->query($query2);
       $stmnt -> execute();
       $count = $stmnt->rowCount();
-      echo $count, " ";
+      echo $count, " delted from database";
    
       echo "
         <html><body>
