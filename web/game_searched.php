@@ -21,12 +21,12 @@
 <body>
 
   <h1>Welcome to Games For US!</h1>
+
   <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="genre.php">Genres</a>
-    <a href="wholecatalog.php">Contact</a>
-    <a href="about.html">About</a>
-  </div>
+  <a  href="games.php">Home</a>
+  <a  href="addition.php">add a game</a>
+  <a href="deletion.php">remove a game</a>
+</div>
   <P>Here we hope to fulfill all your gaming needs!</P>
   <p> Your search returned the following games
     <ul class="search_results">
