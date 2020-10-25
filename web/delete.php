@@ -12,7 +12,7 @@ require_once('db.php');
       //note to self this will infinite loop once all 1000 are made need to fix later
       $id=rand();
       
-      $query = "delete game_id from table_top where game_id = $id;";
+      $query = "delete from table_top where game_id = $id;";
 
 
       $stmnt = $db->query($query);
