@@ -17,7 +17,6 @@
   <a class="active" href="games.php">Home</a>
   <a href="addition.php">add a game</a>
   <a href="deletion.php">remove a game</a>
-  <a href="about.html">About</a>
 </div>
 <P>Here we hope to fulfill all your gaming needs!</P>
 <form action="game_searched.php" method="post">
