@@ -50,7 +50,7 @@ require_once('db.php');
       echo $count, " ";
     }
 
-      $query2 = "delete from games where game_id =$id";
+      $query2 = "delete from games where game_id = $id;";
       $stmnt = $db->query($query2);
       $stmnt -> execute();
       $count = $stmnt->rowCount();
