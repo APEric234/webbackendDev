@@ -19,7 +19,7 @@ try{
     }
   }
   if($count_added==0){
-    echo "<li class=game> We dont have a copy of this game</li>";
+    echo "<li class=game> We dont have a copy of $game</li>";
   }
 
 }catch(Exception $ex){
