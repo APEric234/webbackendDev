@@ -8,13 +8,13 @@
 
 <head>
 
-  <link rel="stylesheet" href="homepagestly.css">
+  <link rel="stylesheet" href="game_searched.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="homePage.JS"></script>
 </head>
 <title>
-  Games Forum
+  Game Searched
 
 </title>
 
@@ -23,14 +23,14 @@
   <h1>Welcome to Games For US!</h1>
 
   <div class="topnav">
-  <a  href="games.php">Home</a>
-  <a  href="addition.php">add a game</a>
-  <a href="deletion.php">remove a game</a>
-</div>
+    <a href="games.php">Home</a>
+    <a href="addition.php">add a game</a>
+    <a href="deletion.php">remove a game</a>
+  </div>
   <P>Here we hope to fulfill all your gaming needs!</P>
   <p> Your search returned the following games
     <ul class="search_results">
-    <?php
+      <?php
     require_once('db.php');
     require_once('search.php'); 
     ?>
